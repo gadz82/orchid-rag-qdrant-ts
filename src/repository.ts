@@ -5,6 +5,7 @@ import { OrchidVectorStoreRepository } from '@orchid-ai/orchid/core';
 import type { EmbeddingsLike } from '@orchid-ai/orchid/rag';
 import { getEmbeddingDimension, buildEmbeddings } from '@orchid-ai/orchid/rag';
 
+// ORCHID-MEM: 01a1a0c1-de79-7082-aa22-0721f3c849b3 — TypeScript Qdrant adapter
 export class QdrantRepository extends OrchidVectorStoreRepository {
   private client: QdrantClient;
   private embeddings: EmbeddingsLike | null = null;
